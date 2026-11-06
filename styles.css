@@ -1,5 +1,5 @@
 /* ===================================================================
-   Cricket SA Academy — shared stylesheet (all pages)
+   Cricket Coders Academy — shared stylesheet (all pages)
    Cricket South Africa palette: green (#026637) and gold (#ffcc07) on
    white, deep green dark sections
 
@@ -70,7 +70,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--header);bor
 nav.scrolled{}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:13px 26px;display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand{display:inline-flex;align-items:center;gap:11px}
-.brand img{height:34px;width:34px;object-fit:contain;display:block}
+.brand img{height:62px;width:auto;object-fit:contain;display:block}
 /* .08em, not Equinix's .2em — that tracking was set for one short capitalised
    word; on the two-word "CRICKET SA" it spread the lockup too wide for the nav. */
 .brand-word{font-size:19px;font-weight:700;letter-spacing:.08em;color:var(--grey);line-height:1}
@@ -140,7 +140,7 @@ section{padding:80px 0}
 /* ONE LINE (13 Sep 2026): "Welcome To The <Name> Academy" sits on a single line, as
    asked for on every academy. It used to be capped at max-width:16ch, which forced
    a wrap by design. nowrap holds it to one line, and the size scales with the
-   viewport so the longest of the seven titles, "Welcome To The Cricket SA Academy",
+   viewport so the longest of the seven titles, "Welcome To The Cricket Coders Academy",
    still fits the hero at every width down to the phone breakpoint — measured in a
    browser, not estimated. Below 640px it wraps again (see the rule in that
    @media block): a 33-character headline cannot sit on one line on a phone at a
@@ -276,7 +276,7 @@ footer{background:var(--dark);color:#a9a2b4;padding:52px 0 30px;font-size:14px}
 /* the mark is a JPG with a solid white background — sit it on a white chip
    rather than inverting it, which would flatten the whole square to white */
 .foot-brand{display:inline-flex;align-items:center;gap:12px}
-.foot-brand img{height:34px;width:34px;object-fit:contain;background:#fff;border-radius:7px;padding:3px}
+.foot-brand img{height:72px;width:auto;object-fit:contain;filter:none;opacity:1}
 .foot-brand .brand-word{color:#fff;font-size:17px;font-weight:700;letter-spacing:.2em;line-height:1}
 .foot-accred{max-width:560px}
 .foot-accred strong{color:#ded8e6;display:block;margin-bottom:6px;font-size:13px}
@@ -940,7 +940,7 @@ footer{background:var(--dark);color:#a9a2b4;padding:52px 0 30px;font-size:14px}
      by this headline's width in ems. 20.5 is its width in Verdana, the widest of the
      fonts measured, so it fits whichever system font the phone uses. The first
      declaration is for browsers without min(). Change the text, re-measure. */
-  .hero h1{font-size:5vw;font-size:min(40px,calc((100vw - 52px) / 20.5));max-width:none;white-space:nowrap}
+  .hero h1{font-size:5vw;font-size:min(40px,calc((100vw - 52px) / 23));max-width:none;white-space:nowrap}
   /* The pill has to stay round and tappable while the field beside it shrinks,
      so the button keeps its width and the padding comes off the left instead. */
   .hero-search{padding:6px 6px 6px 18px}

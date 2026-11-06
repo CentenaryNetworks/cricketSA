@@ -1,4 +1,4 @@
-# Deploy Cricket SA Academy to centenarynetworks.com/cricketsaacademy/ over SFTP.
+# Deploy Cricket Coders Academy to centenarynetworks.com/cricketsaacademy/ over SFTP.
 #
 # This is the SPS workflow with the nouns changed. It is a copy rather than
 # something shared because a GitHub workflow cannot live in another repository,
@@ -7,7 +7,7 @@
 # point. If you change one of these files, change both: tools/sync-backend.php
 # in the SPS repository does NOT sync workflows, deliberately.
 #
-# DELIBERATELY MANUAL: GitHub -> Actions -> "Deploy Cricket SA Academy" -> Run workflow.
+# DELIBERATELY MANUAL: GitHub -> Actions -> "Deploy Cricket Coders Academy" -> Run workflow.
 # Pushing does not deploy. This lands inside a LIVE CLIENT SITE, and going live
 # stays a decision rather than a side effect of a commit.
 #
@@ -39,7 +39,7 @@
 # Ask Xneelo for an FTP user whose home is public_html/cricketsaacademy if the panel
 # allows it. Then the credential in this repository physically cannot reach the
 # client's site or SPS's academy, which is worth more than every check below.
-name: "Deploy Cricket SA Academy"
+name: "Deploy Cricket Coders Academy"
 
 on:
   workflow_dispatch:
@@ -276,8 +276,8 @@ jobs:
           for p in "/" "/courses" "/graduates" "/contact" "/privacy" "/login" "/forgot" "/reset"; do
             body=$(curl -sS --max-time 30 "$base$p" || echo '')
             case "$body" in
-              *"Cricket SA Academy"*) printf '  %-22s ok\n' "$p" ;;
-              *) echo "::error::$p did not come back as a Cricket SA Academy page."; fail=1 ;;
+              *"Cricket Coders Academy"*) printf '  %-22s ok\n' "$p" ;;
+              *) echo "::error::$p did not come back as a Cricket Coders Academy page."; fail=1 ;;
             esac
           done
 
@@ -348,7 +348,7 @@ jobs:
         if: always()
         run: |
           {
-            echo "### Deploy Cricket SA Academy"
+            echo "### Deploy Cricket Coders Academy"
             echo ""
             echo "| | |"
             echo "|---|---|"

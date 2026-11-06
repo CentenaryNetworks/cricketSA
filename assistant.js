@@ -1,4 +1,4 @@
-/* ===== Cricket SA Academy — client-side AI assistant (self-contained, no backend) ===== */
+/* ===== Cricket Coders Academy — client-side AI assistant (self-contained, no backend) ===== */
 (function(){
   if(window.__aiwLoaded)return; window.__aiwLoaded=1;
   var css=

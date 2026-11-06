@@ -28,7 +28,7 @@
   /* Calendar identity. This ends up inside the .ics file the learner downloads,
      so it has to name the academy they actually study with — the one field in
      here that is not brand-neutral. Change both when porting to another site. */
-  var BRAND = 'Cricket SA Academy';
+  var BRAND = 'Cricket Coders Academy';
   var UID_HOST = 'cricketsa.academy';
 
   var DAY_MS = 86400000;

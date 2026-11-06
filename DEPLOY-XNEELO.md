@@ -1,6 +1,6 @@
-# Putting Cricket SA Academy on centenarynetworks.com/cricketsaacademy
+# Putting Cricket Coders Academy on centenarynetworks.com/cricketsaacademy
 
-Cricket SA Academy is the same application as SPS Academy, in a second folder on the same
+Cricket Coders Academy is the same application as SPS Academy, in a second folder on the same
 Xneelo account, sharing one MySQL database. What keeps the two companies' learners apart
 is a single line — `'tenant' => 'cricketsa'` — in a configuration file that lives **outside
 the web root** and is not in this repository.
@@ -96,7 +96,7 @@ the token**. While it is empty, `/setup` and `/phpcheck.php` are plain 404s.
 
 ## Deploying
 
-GitHub → Actions → **Deploy Cricket SA Academy** → Run workflow. Pushing does not deploy.
+GitHub → Actions → **Deploy Cricket Coders Academy** → Run workflow. Pushing does not deploy.
 
 Leave **dry run on** the first time and read the file list. Then run it again with dry run
 off. Leave *delete removed* off.
@@ -109,7 +109,7 @@ After a live run the job checks, and fails the build on any of them:
 - `/my` and `/admin-users` **redirect** when signed out — a 200 there would mean the
   access control is not running
 - `/account.php` answers with a session probe
-- `/contact` says "Cricket SA Academy" and does **not** carry SPS branding — this is the one
+- `/contact` says "Cricket Coders Academy" and does **not** carry SPS branding — this is the one
   that catches a wrong or missing configuration file, because that failure renders
   perfectly and simply shows the wrong company's data
 - `/lib/*.php` and `/schema/*.sql` are not readable over HTTP

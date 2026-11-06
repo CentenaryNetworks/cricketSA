@@ -30,7 +30,7 @@ return [
   /* "Cricket SA", the short form the volunteer portal Centenary built for them
      already uses, so the two sites name the organisation the same way. The full
      name is kept for places that need the organisation itself. */
-  'academy'       => 'Cricket SA Academy',
+  'academy'       => 'Cricket Coders Academy',
   'company'       => 'Cricket South Africa',
 
   /* Used mid-sentence — "for Cricket SA staff", "Fully funded by Cricket SA". */
@@ -41,13 +41,17 @@ return [
      Resized from 1200px / 124 KB to 136px / 12 KB, which is ~4x the 34px it is
      shown at; nothing else about it was changed. The full lockup with lettering is
      in _brand-source/ for anywhere the name is not already written beside it. */
-  'logo'          => 'cricketsa-logo.png',
-  'logo_alt'      => 'Cricket South Africa',
+  /* Since 6 Nov 2026 the academy is Cricket Coders Academy, with its own badge
+     (two cricket-ball coders, "Cricket SA Coders Academy" lettering), cropped from
+     the image Kgomotso sent and cut out of its white card. The old ball-only mark
+     needed a wordmark beside it; this one carries its own lettering. */
+  'logo'          => 'images/cricket-coders-logo.png',
+  'logo_alt'      => 'Cricket Coders Academy',
 
   /* Set beside the logo on the PHP pages, as the static pages already do — the mark
      is the ball alone, with no lettering, so without this the sign-in, contact and
      admin pages never said whose academy they were. See chrome_wordmark(). */
-  'wordmark'      => 'CRICKET SA',
+  'wordmark'      => '',
 
   /* Centenary runs the academy for every organisation, so registrations and reset
      notifications go to Centenary, not to the client. */
@@ -74,5 +78,5 @@ return [
 
   /* Bumped on any release that changes styles.css or a .js file.
      See asset() in lib/chrome.php for why this is not optional. */
-  'asset_version' => '20261016',
+  'asset_version' => '20261106',
 ];

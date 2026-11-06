@@ -1,4 +1,4 @@
-# Cricket SA Academy
+# Cricket Coders Academy
 
 The in-house training academy of **Cricket South Africa**, run in association with
 Centenary Networks. The seventh academy on the platform, after SPS, Fungi, Maziv,
@@ -110,7 +110,7 @@ Step 1 is done; each step after it needs a credential or a decision.
 4. **Configuration** — `~/private/cricketsaacademy-config.php`, with
    `'tenant' => 'cricketsa'`. That one line is the entire separation between Cricket SA's
    learners and every other organisation's.
-5. **Deploy**, dry run first — GitHub → Actions → *Deploy Cricket SA Academy*.
+5. **Deploy**, dry run first — GitHub → Actions → *Deploy Cricket Coders Academy*.
 6. **Migrate** — fresh `setup_token`, open `/cricketsaacademy/setup`, run it, empty the token.
 7. **Check** — follow *Check before telling anyone* in `DEPLOY-XNEELO.md`.
 
