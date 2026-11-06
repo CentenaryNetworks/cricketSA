@@ -34,7 +34,7 @@ return [
   'company'       => 'Cricket South Africa',
 
   /* Used mid-sentence — "for Cricket SA staff", "Fully funded by Cricket SA". */
-  'company_short' => 'Cricket SA',
+  'company_short' => 'Cricket Coders',
 
   /* The icon-only mark (the green and gold ball, without the CRICKET SOUTH AFRICA
      lettering), from ../cricketsainterview/public/assets/cricket-sa-icon-512.png.
